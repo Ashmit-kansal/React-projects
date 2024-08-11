@@ -66,7 +66,7 @@ function App() {
           <p className="transition-colors duration-1000 ease-in-out" 
              style={{color}}>
              <FaQuoteLeft className="inline mb-1" /> 
-             {quote.quote}
+            {quote.quote}
           </p>
           <p style={{color}} 
              className="transition-colors duration-1000 ease-in-out text-right font-thin mb-4">

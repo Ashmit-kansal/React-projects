@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Slider({ setVolume }) {
+export default function Slider({ setVolume,setDisplay }) {
 
 
     const [value, setValue] = useState(40);
@@ -8,6 +8,7 @@ export default function Slider({ setVolume }) {
         const volumeValue = e.target.value / 100;
         setValue(volumeValue * 100);
         setVolume(volumeValue);
+        setDisplay(`Volume:${Math.floor(volumeValue*100)} `)
     };
 
     return (

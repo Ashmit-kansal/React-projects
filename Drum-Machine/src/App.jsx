@@ -41,7 +41,7 @@ function App() {
               <OnOff onOff={onPower} value="Power" />
             </button>
             <p className="bg-gray-400 text-sm p-2 min-w-20 h-9">{display}</p>
-            <Slider setVolume={setVolume} />
+            <Slider setVolume={setVolume} setDisplay={setDisplay} />
             <button className="outline-none" onClick={() => {
               setonBank(!onBank);
               setInstrument(!instrument);

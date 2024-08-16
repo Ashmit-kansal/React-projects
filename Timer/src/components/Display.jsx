@@ -3,7 +3,7 @@ import { VscDebugPause, VscDebugStart } from "react-icons/vsc";
 import { LuTimerReset } from "react-icons/lu";
 import beep from "../assets/beep.wav";
 
-export default function Display({ breakLength, sessionLength, setSessionLength, setDisabled }) {
+export default function Display({ breakLength, sessionLength, setDisabled }) {
     const [minutes, setMinutes] = useState(sessionLength);
     const [seconds, setSeconds] = useState(0);
     const [display, setDisplay] = useState(`${sessionLength}:00`);

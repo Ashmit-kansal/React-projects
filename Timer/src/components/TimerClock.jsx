@@ -28,7 +28,7 @@ export default function TimerClock() {
                 </div>
             </div>
         </div>
-        <Display breakLength={breakLength} sessionLength={sessionLength} setSessionLength={setSessionLength} setDisabled={setDisabled}/>
+        <Display breakLength={breakLength} sessionLength={sessionLength} setDisabled={setDisabled}/>
         </>
     );
 }
